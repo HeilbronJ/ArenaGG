@@ -1,13 +1,25 @@
+:root {
+  --color-fondo: #F3F1EA;
+  --color-oscuro: #12161F;
+  --color-claro: white;
+  --color-borde: #D9D5C7;
+  --color-acento: #3DDC97;
+  --color-acento-hover: #2FBF80;
+  --color-destacado: red;
+  --color-texto-suave: gray;
+  --espacio: 16px;
+}
+
 body {
   font-family: Arial;
   margin: 0;
-  background: #F3F1EA;
+  background: var(--color-fondo);
 }
 
 .encabezado-sitio,
 .pie-sitio {
-  background: #12161F;
-  color: white;
+  background: var(--color-oscuro);
+  color: var(--color-claro);
   padding: 24px;
 }
 
@@ -18,30 +30,30 @@ body {
 }
 
 .tarjeta-producto {
-  background: white;
-  padding: 16px;
-  border: 1px solid #D9D5C7;
+  background: var(--color-claro);
+  padding: var(--espacio);
+  border: 1px solid var(--color-borde);
   border-radius: 12px;
   float: left;
   width: 280px;
-  margin-right: 16px;
+  margin-right: var(--espacio);
 }
 
 .boton-agregar {
-  background: #3DDC97;
-  color: #12161F;
-  padding: 10px 16px;
+  background: var(--color-acento);
+  color: var(--color-oscuro);
+  padding: 10px var(--espacio);
   border: none;
   border-radius: 8px !important;
   font-size: 14px;
 }
 
 .boton-agregar:hover {
-  background: #2FBF80;
+  background: var(--color-acento-hover);
 }
 
 h2 {
-  color: #3DDC97;
+  color: var(--color-acento);
 }
 
 .lema {
@@ -51,10 +63,10 @@ h2 {
 }
 
 .nombre-producto {
-  color: red;
+  color: var(--color-destacado);
   font-size: 18px;
 }
 
 .precio {
-  color: gray;
+  color: var(--color-texto-suave);
 }
