@@ -23,7 +23,7 @@ body {
   padding: 24px;
 }
 
-#caja1 {
+.contenido-principal {
   width: 900px;
   margin: 0 auto;
   padding: 37px 0;
@@ -44,7 +44,7 @@ body {
   color: var(--color-oscuro);
   padding: 10px var(--espacio);
   border: none;
-  border-radius: 8px !important;
+  border-radius: 8px;
   font-size: 14px;
 }
 
