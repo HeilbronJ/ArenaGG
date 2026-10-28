@@ -7,13 +7,15 @@
     <style>
       body{font-family:Arial;margin:0;background:#F3F1EA}
       .Encabezado{background:#12161F;color:white;padding:24px}
-      #caja1{width:900px;margin:0 auto}
+      #caja1{width:900px;margin:0 auto;padding:37px 0}
       .Tarjeta_Principal{background:white;padding:16px;border:1px solid #D9D5C7;border-radius:12px;float:left;width:280px;margin-right:16px}
       .tarjeta-2{background:white;padding:16px;border:1px solid #D9D5C7;border-radius:12px;float:left;width:280px;margin-right:16px}
       .miBoton{background:#3DDC97;color:#12161F;padding:10px 16px;border:none;border-radius:8px !important;font-size:14px}
       .miBoton:hover{background:#2FBF80}
       h2{color:#3DDC97}
       .lema{font-size:2em;font-weight:bold;margin:0.67em 0}
+      .nombre-producto{color:red;font-size:18px}
+      .precio{color:gray}
     </style>
   </head>
   <body>
@@ -22,26 +24,24 @@
       <p class="lema">Los mejores precios del barrio</p>
     </header>
     <main id="caja1">
-      <br><br>
       <section>
         <h2>Productos</h2>
         <div class="Tarjeta_Principal">
           <img src="agua.jpg" alt="Botella de agua de 600 ml">
-          <h3 style="color:red;font-size:18px">Agua 600 ml</h3>
-          <p style="color:gray">$2.000</p>
+          <h3 class="nombre-producto">Agua 600 ml</h3>
+          <p class="precio">$2.000</p>
           <button class="miBoton">Agregar</button>
         </div>
         <div class="tarjeta-2">
           <img src="papas.jpg" alt="Bolsa de papas fritas">
-          <h3 style="color:red;font-size:18px">Papas fritas</h3>
-          <p style="color:gray">$3.200</p>
+          <h3 class="nombre-producto">Papas fritas</h3>
+          <p class="precio">$3.200</p>
           <button class="miBoton">Agregar</button>
         </div>
       </section>
-      <br><br>
     </main>
     <footer class="Encabezado">
-      <p style="color:white">Tienda de la Esquina · Barranquilla</p>
+      <p>Tienda de la Esquina · Barranquilla</p>
     </footer>
   </body>
 </html>
