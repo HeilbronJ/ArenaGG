@@ -1,10 +1,60 @@
-body{font-family:Arial;margin:0;background:#F3F1EA}
-.encabezado-sitio,.pie-sitio{background:#12161F;color:white;padding:24px}
-#caja1{width:900px;margin:0 auto;padding:37px 0}
-.tarjeta-producto{background:white;padding:16px;border:1px solid #D9D5C7;border-radius:12px;float:left;width:280px;margin-right:16px}
-.boton-agregar{background:#3DDC97;color:#12161F;padding:10px 16px;border:none;border-radius:8px !important;font-size:14px}
-.boton-agregar:hover{background:#2FBF80}
-h2{color:#3DDC97}
-.lema{font-size:2em;font-weight:bold;margin:0.67em 0}
-.nombre-producto{color:red;font-size:18px}
-.precio{color:gray}
+body {
+  font-family: Arial;
+  margin: 0;
+  background: #F3F1EA;
+}
+
+.encabezado-sitio,
+.pie-sitio {
+  background: #12161F;
+  color: white;
+  padding: 24px;
+}
+
+#caja1 {
+  width: 900px;
+  margin: 0 auto;
+  padding: 37px 0;
+}
+
+.tarjeta-producto {
+  background: white;
+  padding: 16px;
+  border: 1px solid #D9D5C7;
+  border-radius: 12px;
+  float: left;
+  width: 280px;
+  margin-right: 16px;
+}
+
+.boton-agregar {
+  background: #3DDC97;
+  color: #12161F;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px !important;
+  font-size: 14px;
+}
+
+.boton-agregar:hover {
+  background: #2FBF80;
+}
+
+h2 {
+  color: #3DDC97;
+}
+
+.lema {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 0.67em 0;
+}
+
+.nombre-producto {
+  color: red;
+  font-size: 18px;
+}
+
+.precio {
+  color: gray;
+}
