@@ -1,6 +1,7 @@
 # ArenaGG
 Arena GG es una plataforma web que permite a los organizadores crear y gestionar torneos de videojuegos, 
 facilitando la inscripción de participantes, la programación de partidas y el seguimiento de los resultados.
+
 ## Equipo
 | Integrante | Rol en el equipo | Usuario de GitHub |
 | --- | --- | --- |
@@ -8,23 +9,24 @@ facilitando la inscripción de participantes, la programación de partidas y el 
 | Mario Otero | Scrum Master | mario-try |
 | Jesus Martinez | Developer | jxsus890 |
 | Amily Yepes | Developer | |
+
 ## Cómo ejecutar el proyecto
 1. Clonar el repositorio con git clone y la URL del repo.
 2. Abrir la carpeta en VS Code.
 3. Abrir index.html en el navegador.
+   
 ## Flujo de trabajo
 - Una rama por historia (feature/, fix/ o docs/).
 - Nadie sube directo a main: todo entra por pull request con una aprobación.
 - Los mensajes de commit van en presente simple y explican claramente qué se hizo.
+  
 # Sistema operativo
 Windows 10 o superior
+
 # Editores de codigp
 - Visual Studio Code
 - Sublime Text
 - Antigravity
-# Dependencias y archivos temporales
-
-# Archivos con datos sensibles
 
 ## ¿Cómo se prueba un Pull Request?
 1. El compañero sube sus cambios: <br>
