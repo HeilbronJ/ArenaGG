@@ -1,0 +1,86 @@
+:root {
+  --color-fondo: #F3F1EA;
+  --color-oscuro: #12161F;
+  --color-claro: white;
+  --color-borde: #D9D5C7;
+  --color-acento: #3DDC97;
+  --color-acento-hover: #2FBF80;
+  --color-destacado: red;
+  --color-texto-suave: gray;
+  --espacio: 1rem;
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+  background: var(--color-fondo);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.encabezado-sitio,
+.pie-sitio {
+  background: var(--color-oscuro);
+  color: var(--color-claro);
+  padding: 24px;
+}
+
+.contenido-principal {
+  width: 100%;
+  max-width: 56.25rem;
+  margin: 0 auto;
+  padding: 37px 0;
+  flex: 1;
+}
+
+.lista-productos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--espacio);
+}
+
+.tarjeta-producto {
+  background: var(--color-claro);
+  padding: var(--espacio);
+  border: 1px solid var(--color-borde);
+  border-radius: 12px;
+  flex: 0 1 17.5rem;
+}
+
+.boton-agregar {
+  background: var(--color-acento);
+  color: var(--color-oscuro);
+  padding: 10px var(--espacio);
+  border: none;
+  border-radius: 8px;
+  font-size: 0.875rem;
+}
+
+.boton-agregar:hover {
+  background: var(--color-acento-hover);
+}
+
+h2 {
+  color: var(--color-acento);
+}
+
+.lema {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 0.67em 0;
+}
+
+.nombre-producto {
+  color: var(--color-destacado);
+  font-size: 1.125rem;
+}
+
+.precio {
+  color: var(--color-texto-suave);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
