@@ -1,0 +1,17 @@
+# Variables de entorno (claves y contraseñas)
+.env
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# Node
+node_modules/
+
+# Editor y sistema
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
