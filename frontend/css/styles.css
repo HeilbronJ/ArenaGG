@@ -721,3 +721,124 @@ button:focus-visible {
     transform: none;
   }
 }
+
+/* ===== Modales de inicio de sesión y registro ===== */
+
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(1, 1, 1, 0.85);
+  backdrop-filter: blur(5px);
+}
+
+.modal.is-visible {
+  display: flex;
+}
+
+.modal-contenido {
+  position: relative;
+  width: 100%;
+  max-width: 430px;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 35px;
+  border: 1px solid var(--color-borde);
+  border-radius: 16px;
+  background: var(--color-vino-oscuro);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.6);
+}
+
+.modal-cerrar {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  border: none;
+  background: transparent;
+  color: var(--color-crema);
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.modal-titulo {
+  margin-bottom: 5px;
+  color: var(--color-crema);
+  font-family: var(--fuente-titulos);
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.modal-descripcion {
+  margin-bottom: 25px;
+  color: var(--color-rosa);
+  text-align: center;
+}
+
+.formulario-modal {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.formulario-modal label {
+  color: var(--color-crema);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.formulario-modal input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid var(--color-borde);
+  border-radius: 8px;
+  outline: none;
+  background: var(--color-negro);
+  color: var(--color-crema);
+  font-family: var(--fuente-texto);
+}
+
+.formulario-modal input:focus {
+  border-color: var(--color-rosa);
+  box-shadow: 0 0 0 2px rgba(221, 168, 159, 0.15);
+}
+
+.formulario-modal input::placeholder {
+  color: #a58d8d;
+}
+
+.modal-enviar {
+  width: 100%;
+  margin-top: 12px;
+  cursor: pointer;
+}
+
+.modal-alternativa {
+  margin-top: 22px;
+  color: var(--color-crema);
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.modal-cambiar {
+  border: none;
+  background: transparent;
+  color: var(--color-rosa);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.modal-cambiar:hover,
+.modal-cerrar:hover {
+  color: var(--color-rojo-claro);
+}
+
+@media (max-width: 480px) {
+  .modal-contenido {
+    padding: 28px 22px;
+  }
+}
