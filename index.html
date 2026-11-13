@@ -21,12 +21,72 @@
           <li><a class="enlace-navegacion" href="#como-funciona">Cómo funciona</a></li>
         </ul>
         <div class="grupo-botones">
-          <a class="boton boton-secundario" href="frontend/pages/login.html">Iniciar sesión</a>
-          <a class="boton boton-principal" href="frontend/pages/registro.html">Registrarse</a>
+  <button class="boton boton-secundario" type="button" data-modal-open="modal-login">
+    Iniciar sesión
+  </button>
+  <button class="boton boton-principal" type="button" data-modal-open="modal-registro">
+    Registrarse
+  </button>
+</div>
         </div>
       </nav>
     </div>
   </header>
+    <!-- Modal de inicio de sesión -->
+  <section class="modal" id="modal-login" aria-hidden="true">
+    <div class="modal-contenido" role="dialog" aria-modal="true" aria-labelledby="titulo-login">
+      <button class="modal-cerrar" type="button" data-modal-close aria-label="Cerrar">&times;</button>
+
+      <h2 class="modal-titulo" id="titulo-login">Iniciar sesión</h2>
+      <p class="modal-descripcion">Ingresa a tu cuenta de ArenaGG.</p>
+
+      <form class="formulario-modal">
+        <label for="login-correo">Correo electrónico</label>
+        <input id="login-correo" name="correo" type="email" placeholder="ejemplo@correo.com" required>
+
+        <label for="login-contrasena">Contraseña</label>
+        <input id="login-contrasena" name="contrasena" type="password" placeholder="Ingresa tu contraseña" required>
+
+        <button class="boton boton-principal modal-enviar" type="submit">Iniciar sesión</button>
+      </form>
+
+      <p class="modal-alternativa">
+        ¿No tienes cuenta?
+        <button type="button" class="modal-cambiar" data-modal-switch="modal-registro">Regístrate</button>
+      </p>
+    </div>
+  </section>
+
+  <!-- Modal de registro -->
+  <section class="modal" id="modal-registro" aria-hidden="true">
+    <div class="modal-contenido" role="dialog" aria-modal="true" aria-labelledby="titulo-registro">
+      <button class="modal-cerrar" type="button" data-modal-close aria-label="Cerrar">&times;</button>
+
+      <h2 class="modal-titulo" id="titulo-registro">Crear cuenta</h2>
+      <p class="modal-descripcion">Únete a la comunidad de ArenaGG.</p>
+
+      <form class="formulario-modal">
+        <label for="registro-nick">Nombre de usuario</label>
+        <input id="registro-nick" name="nick" type="text" placeholder="Tu nombre de jugador" required>
+
+        <label for="registro-correo">Correo electrónico</label>
+        <input id="registro-correo" name="correo" type="email" placeholder="ejemplo@correo.com" required>
+
+        <label for="registro-contrasena">Contraseña</label>
+        <input id="registro-contrasena" name="contrasena" type="password" placeholder="Crea una contraseña" required>
+
+        <label for="registro-confirmar">Confirmar contraseña</label>
+        <input id="registro-confirmar" name="confirmar" type="password" placeholder="Repite tu contraseña" required>
+
+        <button class="boton boton-principal modal-enviar" type="submit">Registrarme</button>
+      </form>
+
+      <p class="modal-alternativa">
+        ¿Ya tienes cuenta?
+        <button type="button" class="modal-cambiar" data-modal-switch="modal-login">Inicia sesión</button>
+      </p>
+    </div>
+  </section>
 
   <main>
     <section class="portada">
